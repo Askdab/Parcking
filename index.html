@@ -35,58 +35,6 @@
 			возле студгородка</h4>
 		</div>
 	</section>
-	<section id="orderforma">
-		<h5>Заявка</h5>
-		<div class="order">
-			<form class="myForm">
-				<label for=”parking_target”>Выбирите парковку</label>
-				<select name=”pickup_place” id=”pickup_place”>
-					<option value="Selectsamethink">Выбирите парковку</option>
-					<option value=”under” >Подземная парковка университета </option>
-					<option value=”neartheYgu” >Парковка главно</option>
-					<option value=”neartheSok” >Парковка Спортивно-Оздоровительного Комплекса</option>
-					<option value="nearKampus"> Парковка оющежития</option>
-				</select>
-				<label for="selectdatabegin">Выбирете дату вьезда</label>
-				<input type="date" name="selectdata" value="2019-09-01" min="2019-05-30">
-				<label for="selectdataend">Выбирете дату выезда</label>
-				<input type="date" name="selectdata" value="2019-09-01" min="2019-05-30">
-
-				<label for=”customer_name”>ФИО</label>
-				<input type=”text” name=”customer_name” id=”customer_name”  required>
-				<label for=”phone_number”>Номер телефона</label>
-				<input type=”tel” name=”phone_number” id=”phone_number” value="+7" placeholder="9028144433" required>
-				<label for=”email_address”>Email </label>
-				<input type=”email” name=”email_address” id=”email_address” placeholder="example@mail.ru"	required>
-
-				<label for=”SerialNomerPassport”>Серия/Номер паспорта</label>
-				<input type=”datetime-local” name=”SerialNomerPassport” id=”SerialNomerPassport” placeholder="****  ******" required>
-				
-				
-				<label for=”GosnomerCar”>Гос номер машины</label>
-				<input type=”text” name=”GosnomerCar” id=”GosnomerCar”  placeholder="а111аа 186" required>
-
-				<label for=”ColorCar”>Цвет машины</label>
-				<input type=”text” name=”ColorCar” id=”ColorCar” placeholder="белый" required>
-				
-				<label for=”ModelCar”>Модель машины</label>
-				<input type=”text” name=”ModelCar” id=”ModelCar” 
-				value="lada vesta" placeholder="toyota camry" required>
-
-				<label for=”WightCar”>Ширина машины</label>
-				<input type=”text” name=”WightCar” id=”WightCar” placeholder="1,8" required>
-
-				<label for=”HightCar”>Высота машины</label>
-				<input type=”text” name=”HightCar” id=”HightCar” placeholder="1,8" required>
-
-				<label for=”LongCar”>Длина машины</label>
-				<input type=”text” name=”LongCar” id=”LongCar” placeholder="4,7" required>
-				<button class="droptable">Отправить</button>
-			</form>
-		</div>
-
-
-	</section>
 	<section id="mapnavigtions"> 
 		<ul class="slidermenu">
 			<li class="underparking" onclick="underparking()">Подземный паркинг</li>
@@ -114,6 +62,56 @@
 				<p>Закрытый паркинг с вьездом с улицы Студенческой</p>
 				<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade48fbb00ba950f4e1f873819bcd8e6c096bf4d4bd3245c7b8d4523097a4c621&amp;width=46vw&amp;height=38vw&amp;lang=ru_RU&amp;scroll=fulse"></script></div>
 			</div>
+		</div>
+	</section>
+	<section id="orderforma">
+		<h5>Заявка</h5>
+		<div class="order">
+			<form class="myForm">
+				<label for=”parking_target”>Выбирите парковку</label>
+				<select name=”pickup_place” id=”pickup_place”>
+					<option value="Selectsamethink">Выбирите парковку</option>
+					<option value=”under” >Подземная парковка университета </option>
+					<option value=”neartheYgu” >Парковка главно</option>
+					<option value=”neartheSok” >Парковка Спортивно-Оздоровительного Комплекса</option>
+					<option value="nearKampus"> Парковка оющежития</option>
+				</select>
+				<label for="selectdatabegin">Выбирете дату вьезда</label>
+				<input type="date" name="selectdata" value="2019-09-01" min="2019-05-30">
+				<label for="selectdataend">Выбирете дату выезда</label>
+				<input type="date" name="selectdata" value="2019-09-01" min="2019-05-30">
+
+				<label for=”customer_name”>ФИО</label>
+				<input type=”text” name=”customer_name” id=”customer_name” placeholder="Иванов Иван Иванович" required>
+				<label for=”phone_number”>Номер телефона</label>
+				<input type=”tel” name=”phone_number” id=”phone_number” value="+7" placeholder="9028144433" required>
+				<label for=”email_address”>Email </label>
+				<input type=”email” name=”email_address” id=”email_address” placeholder="example@mail.ru"	required>
+
+				<label for=”SerialNomerPassport”>Серия/Номер паспорта</label>
+				<input type=”datetime-local” name=”SerialNomerPassport” id=”SerialNomerPassport” placeholder="****  ******" required>
+				
+				
+				<label for=”GosnomerCar”>Гос номер машины</label>
+				<input type=”text” name=”GosnomerCar” id=”GosnomerCar”  placeholder="а111аа 186" required>
+
+				<label for=”ColorCar”>Цвет машины</label>
+				<input type=”text” name=”ColorCar” id=”ColorCar” placeholder="белый" required>
+				
+				<label for=”ModelCar”>Модель машины</label>
+				<input type=”text” name=”ModelCar” id=”ModelCar” 
+				 placeholder="toyota camry" required>
+
+				<label for=”WightCar”>Ширина машины</label>
+				<input type=”text” name=”WightCar” id=”WightCar” placeholder="1,8" required>
+
+				<label for=”HightCar”>Высота машины</label>
+				<input type=”text” name=”HightCar” id=”HightCar” placeholder="1,8" required>
+
+				<label for=”LongCar”>Длина машины</label>
+				<input type=”text” name=”LongCar” id=”LongCar” placeholder="4,7" required>
+				<button class="droptable">Отправить</button>
+			</form>
 		</div>
 	</section>
 	<section id="personalroom">

@@ -127,10 +127,6 @@ h3{
 	grid-area: under1;
 }
 
-.active{
-	color:green;
-}
-
 .yguparking{
 	grid-area: ygu;
 }
@@ -180,10 +176,6 @@ h5{
 	font-size: 6vw;
 	text-align: center;
 	margin: 1vw 0 0 0;
-}
-
-.order{
-
 }
 
 .myForm{
@@ -258,6 +250,7 @@ text-align: center;
 	border-right: #000 3px solid;
 }
 
+
 .logoygufreeorder{
     height: 10vw;
     width: 25vw;
@@ -267,7 +260,7 @@ text-align: center;
 .underparking, .nearthebuilding, .neartheSOK, .neartheKampus
 {
 font-family: "SFUIText-Bold";
-margin: 0 0 3vw 2vw;
+margin: 0 0 2vw 2vw;
 cursor: pointer;
 font-size: 2.5vw;
 
@@ -277,6 +270,8 @@ font-size: 2.5vw;
 {
 	opacity: 0.7;
 }
+
+
 .sliderbox{
     margin: 2vw 0 0 0;
     grid-area: sliderbox;

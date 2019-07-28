@@ -16,10 +16,12 @@ function changeDefOver(e) {
 function changeDefOut(e) {
   this.style.opacity="0.7";
 }
-	
+
+
+
 var SlideIndex =1;
 	showSlides(SlideIndex);
-
+    
 
 function underparking(){
 	showSlides(SlideIndex=1);
@@ -45,12 +47,17 @@ function currentSlider(n){
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("item");
+    var list = document.getElementsByTagName("li");
   	
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        list[i].style.color = "black";
     }
     slides[SlideIndex - 1].style.display = "block";
+    list[SlideIndex - 1].style.color = "grey";
 }
+
+
 
 /*function initMap() {
     var coordinates = {lat: 61.001283, lng: 69.030192},
@@ -87,3 +94,5 @@ window.onclick = function(event) {
         body.style.opacity="1";
     }
 }
+
+
