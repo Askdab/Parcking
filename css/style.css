@@ -1,0 +1,459 @@
+
+
+@font-face {
+    font-family: "MyriadProBoldItalic";
+	src: url("../fonts/Myriad Pro Bold Italic/MyriadProBoldItalic.ttf") format("truetype");
+   }
+@font-face{
+	font-family: "SFUIText-Bold";
+	src:url("../fonts/SanFrancisco/SFUIText-Bold.ttf");
+   }
+
+body{
+	background-image: url("../image/c21.png");
+	background-attachment: fixed;
+	background-color: #ebe9e9;
+	background-position: center center;
+	background-size: cover;
+	font-family: "MyriadProBoldItalic", Ariel, sans-serif;
+	display: grid;
+	grid-template-areas:
+
+"header"
+"info"
+"mapnavigtions"
+"myorders"
+"personalroom"
+"footer";
+grid-template-columns:1fr;
+grid-template-rows: 0.5fr 0.8fr 1fr 1.1fr 1fr 0.2fr;
+margin: 0;
+padding: 0;
+}
+div
+{
+	box-sizing: border-box;
+}
+section{
+	box-sizing: border-box;
+}
+
+a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family:  "MyriadProBoldItalic", Ariel, sans-serif;
+    color: #383838;
+}
+a:hover{
+	opacity: 0.5;
+	color: #000;
+}
+
+header{
+	grid-area: header;
+	padding: 0;
+	margin: 0;
+	color: #d6d6d6;
+}
+
+#myBtn {
+    position: relative;
+    font-family: "MyriadProBoldItalic", sans-serif !important;
+    color: white;
+	border: none;
+	cursor: pointer;
+    font-size: 2vw;
+    margin: 2vw 0 0 85vw;
+    z-index: 5;
+    text-shadow: #000 0 0 3px;
+  }
+
+h1{
+	font-size: 9vw;
+	text-align: center;
+	margin: 4vw 0 0 0;
+}
+
+h2{
+	font-size: 8vw;
+	text-align: center;
+	margin: 0 0 3vw 0;
+	padding: 0;
+}
+.buttom
+{
+opacity: 1;
+transition: opacity;
+transition-duration: 1.5s; 
+grid-area: buttom;
+background-color: #acacac;
+text-align: center;
+height: 6vw;
+font-size: 4vw;
+width: 30vw;
+margin: 0 auto 6vw auto ;
+border: #e8e8e8 4px solid;
+border-radius: 70px;
+}
+.buttom:hover{
+	opacity: 1;
+}
+
+
+#infosection{
+	font-family: "SFUIText-Bold", sans-serif;
+	grid-area: info;
+	background-color: #e8e8e8;
+	display: grid;
+	grid-template-areas: 
+	"... h h h h..."
+	"...  under1 ygu COK home ...";
+	grid-template-rows: 12vw  30vw ;
+	grid-template-columns: 0.05fr 1fr 1fr 1fr 1fr 0.05fr;
+}
+
+h3{
+	font-family: "MyriadProBoldItalic", sans-serif;
+	color: #232323;
+	grid-area: h;
+	font-size: 6vw;
+	text-align: center;
+	margin: 3vw 0 3vw 0;
+}
+
+
+.underparking1{
+	grid-area: under1;
+}
+
+.active{
+	color:green;
+}
+
+.yguparking{
+	grid-area: ygu;
+}
+
+.homeparking{
+	grid-area: home;
+
+	
+}
+.COKparking{
+	grid-area: COK;
+
+}
+
+.parking17{
+	margin: 2vw 0 1vw 4vw;
+	height: 15vw;
+}
+
+h4{
+	font-family: "SFUIText-Bold", sans-serif;
+	color: #232323;
+	font-size: 2.2vw;
+	text-align: center;
+	margin: 0 0 1vw 0;
+	padding: 0;
+}
+
+
+
+#orderforma{
+	
+	grid-area: myorders;
+	background-color: #e8e8e8;
+	display: grid;
+	grid-template-areas: 
+	"h3"
+	"order2";
+	grid-template-rows: 0.3fr 3fr ;
+	grid-template-columns: 2fr;
+}
+
+h5{
+	font-family: "MyriadProBoldItalic", sans-serif;
+	color: #232323;
+	grid-area: h3;
+	font-size: 6vw;
+	text-align: center;
+	margin: 1vw 0 0 0;
+}
+
+.order{
+
+}
+
+.myForm{
+text-align: center;
+margin:0 20vw;
+width: 50vw;
+display: grid;
+grid-template-columns: [labels] auto [controls] 1fr;
+grid-auto-flow: row;
+grid-gap: .8em;
+padding: 1.2em;
+font-size: 1vw;
+font-family: "SFUIText-Bold";
+}
+.myForm > label {
+margin: 0.6vw 0 0 0;
+grid-column: labels;
+grid-row: auto;
+}
+.myForm > input,
+.myForm > select,
+.myForm > textarea {
+font-size: 1vw;
+grid-column: controls;
+grid-row: auto;
+padding: .4em;
+border: 0;
+}
+
+.myForm > button {
+grid-column: span 2;
+
+}
+.myForm > button {
+background-color: #acacac;
+
+width: 15vw;
+height: 2.5vw;
+border-radius: 25px;
+border: 0;
+color: white;
+margin: 0 0 0 20vw;
+font-size:1.5vw;
+text-align: center; 
+}
+
+.myForm > button:hover{
+	opacity: 0.7;
+}
+
+
+#mapnavigtions{
+	font-family: "SFUIText-Bold";
+	grid-area: mapnavigtions;
+	background-color: #e8e8e8;
+	display: grid;
+	grid-template-areas: 
+	"slidermenu sliderbox";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: inset 0 5px 25px -4px #9E9E9E, inset 0 -5px 25px -4px #9E9E9E;
+
+}
+
+.slidermenu{
+	margin: 7.4vw 0 10vw 0;
+    grid-area: slidermenu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	list-style: none;
+	border-right: #000 3px solid;
+}
+
+.logoygufreeorder{
+    height: 10vw;
+    width: 25vw;
+	margin: 0 0 0 4vw;
+}
+
+.underparking, .nearthebuilding, .neartheSOK, .neartheKampus
+{
+font-family: "SFUIText-Bold";
+margin: 0 0 3vw 2vw;
+cursor: pointer;
+font-size: 2.5vw;
+
+}
+.underparking:hover, .nearthebuilding:hover,
+ .neartheSOK:hover, .neartheKampus:hover
+{
+	opacity: 0.7;
+}
+.sliderbox{
+    margin: 2vw 0 0 0;
+    grid-area: sliderbox;
+}
+
+p{
+	margin: 2vw 0 0 0;
+	font-size: 1.5vw;
+	text-align: center; 
+}
+
+.map{
+	margin: 2vw 0 0 10vw;
+	
+}
+#personalroom{
+	box-shadow: inset 0 5px 25px -4px #9E9E9E, inset 0 -5px 25px -4px #9E9E9E;
+	grid-area: personalroom;
+	background-color: #e8e8e8;
+	display: grid;
+	grid-template-areas: 
+	"... personalroomH5 personalroomH5 personalroomH5 ..."
+	"idOrder dataCreateOrder parkingName statusOrder dateOutParking";
+	grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr;
+}	
+
+.h5{
+	grid-area: personalroomH5;
+	font-family: "MyriadProBoldItalic", sans-serif;
+	color: #232323;
+	font-size: 6vw;
+	text-align: center;
+	margin: 1vw 0 0 12vw;
+}
+
+.idOrder{
+	grid-area: idOrder;
+
+}
+
+.dataCreateOrder{
+	grid-area:dataCreateOrder; 
+}
+
+.parkingName{
+	grid-area: parkingName;
+}
+
+.statusOrder{
+	grid-area: statusOrder;
+}
+
+.dateOutParking{
+	grid-area: dateOutParking;
+}
+
+
+footer{
+	grid-area: footer;
+}
+
+
+
+/*модальное окно*/
+
+
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding: 16vw 0 0 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    width: 40vw;
+    position: relative;
+    display: grid; /* Hidden by default */
+    grid-template-areas: 
+    "imagemodal container-modal";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+    padding: 0;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: gray;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0 0 0 22vw;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.imgfonmodal{
+    grid-area: imagemodal;
+    height: 25vw;
+}
+
+.container-modal{
+    grid-area: container-modal;
+}
+.logomodal{
+    height: 6vw;
+    margin: 0 0 0 8.7vw;
+}
+
+.myFormAuto{
+width: 21vw;
+text-align: center;
+display: grid;
+grid-template-columns: [labels] auto [controls] 1fr;
+grid-auto-flow: row;
+grid-gap: .8em;
+padding: 1em;
+font-size: 0.9vw;
+font-family: "SFUIText-Bold";
+color: black;
+}
+.myFormAuto > label {
+margin: 1.1vw 0 0 0;
+grid-column: labels;
+grid-row: auto;
+}
+.myFormAuto > input
+ {
+
+font-size: 1vw;
+grid-column: controls;
+grid-row: auto;
+padding: .4em;
+
+}
+
+.myFormAuto > a {
+grid-column: span 2;
+height: 2.3vw;
+font-size: 1.8vw;
+font-family: "SFUIText-Bold", sans-serif;
+width: 12vw;
+border-radius: 25px;
+margin: 1vw 0 0 4.8vw;
+cursor: pointer;
+background-color: #acacac;
+}
+.myFormAuto > a:hover {
+    opacity: 0.8;
+}

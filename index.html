@@ -1,0 +1,153 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Home</title>	
+	<link rel="stylesheet"  type="text/css"  href="css/style.css">	
+</head>
+<body>
+	<header>
+		<a id="myBtn">Авторизация</a>
+		<h1>PARKING SPACE</h1>
+		<h2>Yugra State University</h2>
+		<a href="#orderforma"><div class="buttom">подать заявку</div></a>
+	</header>
+	<section id="infosection">
+		<h3>Парковочные места</h3>
+		<div class="underparking1">
+			<img src="image/17pp.png" alt="17logo" class="parking17">
+			<h4>парковочных мест<br>
+			под зданием</h4>
+		</div>
+		<div class="yguparking">
+			<img src="image/21pp.png" alt="17logo" class="parking17">
+			<h4>парковочных мест<br>
+			возле главного корпуса</h4>
+		</div>	
+		<div class="COKparking">
+			<img src="image/68pp.png" alt="17logo" class="parking17">
+			<h4>парковочных мест<br>
+			возле СОК</h4>
+		</div>
+		<div class="homeparking">
+			<img src="image/12pp.png" alt="17logo" class="parking17">
+			<h4>парковочных мест<br>
+			возле студгородка</h4>
+		</div>
+	</section>
+	<section id="orderforma">
+		<h5>Заявка</h5>
+		<div class="order">
+			<form class="myForm">
+				<label for=”parking_target”>Выбирите парковку</label>
+				<select name=”pickup_place” id=”pickup_place”>
+					<option value="Selectsamethink">Выбирите парковку</option>
+					<option value=”under” >Подземная парковка университета </option>
+					<option value=”neartheYgu” >Парковка главно</option>
+					<option value=”neartheSok” >Парковка Спортивно-Оздоровительного Комплекса</option>
+					<option value="nearKampus"> Парковка оющежития</option>
+				</select>
+				<label for="selectdatabegin">Выбирете дату вьезда</label>
+				<input type="date" name="selectdata" value="2019-09-01" min="2019-05-30">
+				<label for="selectdataend">Выбирете дату выезда</label>
+				<input type="date" name="selectdata" value="2019-09-01" min="2019-05-30">
+
+				<label for=”customer_name”>ФИО</label>
+				<input type=”text” name=”customer_name” id=”customer_name” required>
+				<label for=”phone_number”>Номер телефона</label>
+				<input type=”tel” name=”phone_number” id=”phone_number” required>
+				<label for=”email_address”>Email </label>
+				<input type=”email” name=”email_address” id=”email_address”>
+
+				<label for=”SerialNomerPassport”>Серия/Номер паспорта</label>
+				<input type=”datetime-local” name=”SerialNomerPassport” id=”SerialNomerPassport” value="****  ******" required>
+				
+				
+				<label for=”GosnomerCar”>Гос номер машины</label>
+				<input type=”text” name=”GosnomerCar” id=”GosnomerCar” required>
+
+				<label for=”ColorCar”>Цвет машины</label>
+				<input type=”text” name=”ColorCar” id=”ColorCar” required>
+				
+				<label for=”ModelCar”>Модель машины</label>
+				<input type=”text” name=”ModelCar” id=”ModelCar” 
+				value="lada vesta" required>
+
+				<label for=”WightCar”>Ширина машины</label>
+				<input type=”text” name=”WightCar” id=”WightCar” required>
+
+				<label for=”HightCar”>Высота машины</label>
+				<input type=”text” name=”HightCar” id=”HightCar” required>
+
+				<label for=”LongCar”>Длина машины</label>
+				<input type=”text” name=”LongCar” id=”LongCar” required>
+				<button class="droptable">Отправить</button>
+			</form>
+		</div>
+
+
+	</section>
+	<section id="mapnavigtions"> 
+		<ul class="slidermenu">
+			<li class="underparking" onclick="underparking()">Подземный паркинг</li>
+			<li class="nearthebuilding" onclick="nearthebuilding()">Паркинг главного корпуса</li>
+			<li class="neartheSOK" onclick="neartheSOK()">Паркинг СОК</li>
+			<li class="neartheKampus" onclick="neartheKampus()">Паркинг студгородка</li>
+			<img src="image/logoygufreeorder.png" alt="logoygufreeorder" class="logoygufreeorder">
+		</ul>
+		<div class="sliderbox">
+			<div class="item">
+				<p>Подземный паркинг с въездом с улицы Лопарева</p>
+				<div class="map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A102500970a9dab0b753e2da908e2ce12f3af8e8a8d5485e0f3307bba85015fc4&amp;width=46vw&amp;height=38vw&amp;lang=ru_RU&amp;scroll=fulse"></script>
+				</div>
+			</div>
+			<div class="item">
+				<p>Закрытый паркинг с вьездом с улицы Чехова</p>
+				<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A88004ddc47cf7875d78090985407d68534fc743da02bae6ec1e63c8f1e596a8e&amp;width=46vw&amp;height=38vw&amp;lang=ru_RU&amp;scroll=fulse"></script></div>
+			</div>
+			<div class="item">
+				<p>Закрытый паркинг с въездом с улицы Kарла Иаркса</p>
+				<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A583613d01b03aca534e94ff6846b20bd89c291d40ac04149b08705ed0794796c&amp;width=46vw&amp;height=38vw&amp;lang=ru_RU&amp;scroll=fulse"></script></div>
+			</div>
+			<div class="item">
+				<p>Закрытый паркинг с вьездом с улицы Студенческой</p>
+				<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade48fbb00ba950f4e1f873819bcd8e6c096bf4d4bd3245c7b8d4523097a4c621&amp;width=46vw&amp;height=38vw&amp;lang=ru_RU&amp;scroll=fulse"></script></div>
+			</div>
+		</div>
+	</section>
+	<section id="personalroom">
+		<div class="h5">Личный кабинет</div>
+		<div class="idOrder">
+		
+		</div>
+		<div class="dataCreateOrder">
+
+		</div>
+		<div class="parkingName">
+
+		</div>
+		<div class="statusOrder">
+		</div>
+		<div class="dateOutParking"></div>
+	</section>
+	<footer>
+		
+	</footer>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <img src="image/fonmodal.jpg" alt="fonmodal" class="imgfonmodal">
+		  <div class="container-modal">
+			<span class="close">&times;</span>
+			  <img src="image/logpmodal.png" alt="logomodal" class="logomodal">
+			  <form class="myFormAuto">
+				  <input type=”text” name=”LOGIN” id=”LOGIN” value="Login" required>
+				  <input type=”tel” name=”PASSWORD” id=”PASSWORD” value="Password" required>
+				  <a id="dropLogin">Вход</a>
+				</div>
+		  </div>
+	  </div>	
+
+	<script type="text/javascript" src="javascript/animation.js"></script>
+</body>
+		</html>
