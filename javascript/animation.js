@@ -1,3 +1,5 @@
+
+/*opacity for Orderbutton*/
 var buttom = document.querySelector('.buttom');
 
 buttom.addEventListener('mouseover', changeDefOver);
@@ -18,7 +20,7 @@ function changeDefOut(e) {
 }
 
 
-
+// map block
 var SlideIndex =1;
 	showSlides(SlideIndex);
     
@@ -47,7 +49,7 @@ function currentSlider(n){
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("item");
-    var list = document.getElementsByTagName("li");
+    var list = document.getElementsByClassName("parkingMap");
   	
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -67,7 +69,7 @@ function showSlides(n) {
         });
 }
 /*AIzaSyCxOG8ST8QvrQD63tLXOPU71iXcJsQPhU4*/
-
+//modal window
 var modal = document.getElementById('myModal');
 
 var btn = document.getElementById("myBtn");
@@ -92,6 +94,8 @@ window.onclick = function(event) {
     }
 }
 
+
+// scroll element 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
