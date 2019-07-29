@@ -1,4 +1,6 @@
-
+*{
+	scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: "MyriadProBoldItalic";
@@ -39,7 +41,7 @@ section{
 }
 
 a{
-	margin: 0;
+	
 	padding: 0;
 	text-decoration: none;
 	font-family:  "MyriadProBoldItalic", Ariel, sans-serif;
@@ -83,25 +85,28 @@ h2{
 }
 .buttom
 {
+position: relative;
 opacity: 1;
 transition: opacity;
 transition-duration: 1.5s; 
 grid-area: buttom;
 background-color: #acacac;
 text-align: center;
-height: 6vw;
-font-size: 4vw;
-width: 30vw;
-margin: 0 auto 6vw auto ;
+font-size: 3.5vw;
+margin: 0 0 12vw 32vw ;
 border: #e8e8e8 4px solid;
 border-radius: 70px;
+padding: 0 6vw;
+
 }
+
 .buttom:hover{
 	opacity: 1;
 }
 
 
 #infosection{
+	margin: 12vw 0 0 0;
 	font-family: "SFUIText-Bold", sans-serif;
 	grid-area: info;
 	background-color: #e8e8e8;
@@ -452,3 +457,21 @@ background-color: #acacac;
 .myFormAuto > a:hover {
     opacity: 0.8;
 }
+
+
+/*scroll to top*/
+#myBtn2 {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	height: 2.7vw;
+	color: white;
+	cursor: pointer;
+  }
+  
+  #myBtn2:hover {
+	height: 2.8vw;
+  }
+  
